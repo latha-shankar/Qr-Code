@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Basic QR-code reader example - Version 1.1.0 based on webcamjs</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="jquery.min.js"></script>
+  <script src="webcam.min.js"></script>
+  <script type="text/javascript" src="webcam.js"></script>
+  <script type="text/javascript" src="grid.js"></script>
+  <script type="text/javascript" src="version.js"></script>
+  <script type="text/javascript" src="detector.js"></script>
+  <script type="text/javascript" src="formatinf.js"></script>
+  <script type="text/javascript" src="errorlevel.js"></script>
+  <script type="text/javascript" src="bitmat.js"></script>
+  <script type="text/javascript" src="datablock.js"></script>
+  <script type="text/javascript" src="bmparser.js"></script>
+  <script type="text/javascript" src="datamask.js"></script>
+  <script type="text/javascript" src="rsdecoder.js"></script>
+  <script type="text/javascript" src="gf256poly.js"></script>
+  <script type="text/javascript" src="gf256.js"></script>
+  <script type="text/javascript" src="decoder.js"></script>
+  <script type="text/javascript" src="qrcode.js"></script>
+  <script type="text/javascript" src="findpat.js"></script>
+  <script type="text/javascript" src="alignpat.js"></script>
+  <script type="text/javascript" src="databr.js"></script>
+
+  <script src="effects.js"></script>
+</head>
+<body>
+
+<div class="pageWrapper">
+
+  <div class="boxWrapper">
+    <div id="example" style="width:320px; height:240px;"></div>
+  </div>
+
+  <div class="button">
+    <a id="button">Scan QR code</a>
+  </div>
+
+  <div class="boxWrapper auto">
+    <div id="hiddenImg"></div>
+    <div id="qrContent"><p>Result will be here.</p></div>
+  </div>
+
+</div>
+
+</body>
+</html>
